@@ -6,21 +6,18 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(45deg, black, #004d2e,white); 
+    background: linear-gradient(45deg, black, #004d2e, white); 
     background-size: 200% 200%;
     animation: gradientShift 10s ease infinite;
     color: black;
 }
-.error {
-    color: red;
-    margin-top: 10px;
-    text-align: center;
-}
+
 
 @keyframes gradientShift {
     0% { background-position: 0% 50%; }
@@ -53,7 +50,6 @@ body {
     opacity: 1; 
     transform: translateY(0); 
 }
-
 
 h2 {
     font-size: 34px;
@@ -117,14 +113,13 @@ p a:hover {
 }
 
 .error-message {
-    padding: 12px;
-    background-color: #f8d7da;
-    border-radius: 6px;
-    border: 1px solid #a42834;
-    font-size: 16px;
-    color: #a42834;
+    color: #ff0000;
+    background-color: #ffebee;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ffcdd2;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 h1 {
