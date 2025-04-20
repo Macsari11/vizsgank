@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 $errors = [];
 $success = "";
 
-// Adatbázis kapcsolat
+
 try {
     $conn = new mysqli("localhost", "root", "", "user_db");
     if ($conn->connect_error) {
@@ -17,14 +17,14 @@ try {
     $errors[] = $e->getMessage();
 }
 
-// Regisztráció kezelése
+
 if (empty($errors) && isset($_POST['register'])) {
     $username = trim($_POST['username']);
     $email = trim($_POST['email']);
     $password = $_POST['password'];
     $confirm_password = $_POST['confirm_password'];
 
-    // Input validáció
+    
     if (empty($username)) {
         $errors[] = "A felhasználónév mező nem lehet üres!";
     }
@@ -43,7 +43,7 @@ if (empty($errors) && isset($_POST['register'])) {
         $errors[] = "A jelszavak nem egyeznek!";
     }
 
-    // Felhasználónév vagy email ellenőrzése
+    
     if (empty($errors)) {
         $stmt = $conn->prepare("SELECT id FROM users WHERE username = ? OR email = ?");
         if (!$stmt) {
@@ -59,7 +59,7 @@ if (empty($errors) && isset($_POST['register'])) {
         }
     }
 
-    // Új felhasználó mentése
+  
     if (empty($errors)) {
         $hashed_password = password_hash($password, PASSWORD_DEFAULT);
         $role = "user";
