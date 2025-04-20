@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentSlide = 0;
     let isExploreVisible = false;
 
-    // Carousel slide váltás
+   
     function showSlide(index) {
         slides.forEach((slide, i) => {
             slide.classList.toggle('active', i === index);
@@ -15,13 +15,13 @@ document.addEventListener('DOMContentLoaded', () => {
         showSlide(currentSlide);
     }
 
-    // Automatikus váltás
+
     setInterval(nextSlide, 5000);
 
-    // Kezdő slide
+   
     showSlide(currentSlide);
 
-    // "Fedezd fel!" gomb működése
+   
     const exploreButton = document.querySelector('#explore-button');
     const exploreSection = document.querySelector('#explore-section');
     if (exploreButton && exploreSection) {
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Nem található az "explore-button" vagy "explore-section" elem');
     }
 
-    // Parallax hatás a háttérre
+    
     const background = document.querySelector('.background-container');
     if (background) {
         window.addEventListener('scroll', () => {
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Nem található .background-container elem a DOM-ban');
     }
 
-    // Zárt linkek kezelése
+  
     document.querySelectorAll('.nav-links a.locked').forEach(link => {
         if (!link.dataset.lockedInitialized) {
             link.addEventListener('click', (e) => {
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Évszám frissítése a láblécben
+    
     const yearElement = document.getElementById('year');
     if (yearElement) {
         yearElement.textContent = new Date().getFullYear();

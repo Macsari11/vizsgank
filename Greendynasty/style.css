@@ -1,4 +1,4 @@
-/* Alapvető beállítások */
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -8,7 +8,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Fixált háttér parallax effekttel */
+
 .background-container {
     position: fixed;
     top: 0;
@@ -22,7 +22,7 @@ body {
     transform: translateZ(0);
 }
 
-/* Lenyíló menü stílusa */
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -79,7 +79,7 @@ body {
     display: block;
 }
 
-/* Fejléc és navigáció */
+
 .hero-header {
     position: relative;
     height: 100vh;
@@ -166,18 +166,18 @@ body {
     text-align: center;
     padding: 50px;
     position: relative;
-    margin-top: -50px; /* This will pull the content up */
+    margin-top: -50px; 
 }
 
 .welcome-banner {
-    margin-bottom: 10px; /* Reduced from 20px */
-    padding: 15px 20px; /* Slightly adjusted padding */
+    margin-bottom: 10px; 
+    padding: 15px 20px; 
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     background: none;
-    transform: translateY(-20px); /* This lifts the banner up */
+    transform: translateY(-20px); 
 }
 
 .welcome-border {
@@ -201,7 +201,7 @@ body {
     animation: textGlow 2s infinite alternate ease-in-out;
 }
 
-/* Optional: If you uncomment the welcome-icon in the HTML */
+
 .welcome-icon {
     width: 40px;
     position: absolute;
@@ -212,7 +212,7 @@ body {
     animation: spin 5s infinite linear;
 }
 
-/* Animation for the border */
+
 @keyframes pulseBorder {
     0% {
         box-shadow: 0 0 20px rgba(0, 255, 153, 0.5), inset 0 0 10px rgba(0, 255, 153, 0.3);
@@ -225,7 +225,7 @@ body {
     }
 }
 
-/* Animation for the text glow */
+
 @keyframes textGlow {
     0% {
         text-shadow: 0 0 15px #00cc5c, 0 0 30px rgba(0, 255, 153, 0.5);
@@ -235,7 +235,7 @@ body {
     }
 }
 
-/* Optional: Animation for the icon spin */
+
 @keyframes spin {
     0% {
         transform: translateY(-50%) rotate(0deg);
@@ -245,9 +245,11 @@ body {
     }
 }
 
-/* Responsive Adjustments */
 
-/* Tablet View (1024px and smaller) */
+
+
+
+
 @media (max-width: 1024px) {
     .welcome-text {
         font-size: 1.8rem;
@@ -262,7 +264,7 @@ body {
     }
 }
 
-/* Mobile View (768px and smaller) */
+
 @media (max-width: 768px) {
     .welcome-text {
         font-size: 1.5rem;
@@ -277,7 +279,7 @@ body {
     }
 }
 
-/* Smaller Mobile View (480px and smaller) */
+
 @media (max-width: 480px) {
     .welcome-text {
         font-size: 1.2rem;
@@ -327,7 +329,7 @@ body {
     box-shadow: 0 0 30px #00cc5c, 0 0 50px #00cc5c;
 }
 
-/* "Fedezd fel" szekció */
+
 .explore-section {
     max-width: 1200px;
     margin: 0 auto;
@@ -380,7 +382,7 @@ body {
     text-shadow: 0 0 5px rgba(0, 255, 153, 0.5);
 }
 
-/* Carousel */
+
 .carousel-section {
     display: flex;
     justify-content: center;
@@ -424,7 +426,7 @@ body {
     display: block;
 }
 
-/* Info Section */
+
 .info-section {
     max-width: 1200px;
     margin: 50px auto;
@@ -488,7 +490,7 @@ body {
     text-shadow: 0 0 10px #00cc5c;
 }
 
-/* Futurisztikus lábléc */
+
 .futuristic-footer {
     background: linear-gradient(135deg, #00693e, #000);
     padding: 20px 30px;
@@ -568,7 +570,7 @@ body {
     margin: 0;
 }
 
-/* Animációk */
+
 @keyframes slideIn {
     from { transform: translateY(-50px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
@@ -646,7 +648,7 @@ body {
     }
 }
 
-/* Mobil nézet (768px és kisebb) */
+
 @media (max-width: 768px) {
     .hero-header {
         height: auto;
@@ -769,7 +771,7 @@ body {
     }
 }
 
-/* Kisebb mobil nézet (480px és kisebb) */
+
 @media (max-width: 480px) {
     .nav-container {
         padding: 8px;

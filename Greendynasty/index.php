@@ -2,13 +2,13 @@
 session_start();
 $isLoggedIn = isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true;
 
-// Ha admin, irányítsuk az admin felületre
+
 if ($isLoggedIn && $_SESSION['role'] === 'admin') {
     header("Location: admin/admin_dashboard.php");
     exit();
 }
 
-// Kijelentkezés kezelése
+
 if (isset($_POST['logout'])) {
     session_destroy();
     header("Location: index.php");
@@ -65,8 +65,7 @@ if (isset($_POST['logout'])) {
         <div class="hero-content">
             <div class="welcome-banner">
                 <div class="welcome-border">
-                    <!-- Uncomment the line below to add a spinning Celtics icon -->
-                    <!-- <img src="kepek/logo.png" alt="Celtics Icon" class="welcome-icon"> -->
+                   
                     <span class="welcome-text">Welcome to the Celtics!</span>
                 </div>
             </div>

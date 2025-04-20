@@ -17,7 +17,7 @@ session_start();
             margin: 0 auto;
             padding: 40px;
             min-height: 100vh;
-            background: #008000; /* Egyszínű zöld háttér a képed alapján */
+            background: #008000; 
         }
 
         h1 {
@@ -125,7 +125,7 @@ session_start();
         async function fetchQuestions() {
             try {
                 console.log("Kérdések lekérdezése...");
-                const response = await fetch('get_quiz_questions.php'); // Helyes elérési út
+                const response = await fetch('get_quiz_questions.php');
                 if (!response.ok) {
                     throw new Error(`HTTP hiba! Státusz: ${response.status}`);
                 }
